@@ -1,0 +1,507 @@
+header {
+    background-image: url('../assets/backgrounds/h_img.jpg');
+    text-align: center;
+    background-size: 100% 100%;
+    color: white;
+    background-image: min-height: 300px;
+}
+
+#mouse-click {
+    padding-top: 22px;
+    margin-top: 10%;
+    padding-bottom: 30px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-55px);
+    }
+    60% {
+        transform: translateY(-45px);
+    }
+}
+
+legend {
+    text-align: center;
+}
+
+fieldset p {
+    text-align: center;
+}
+
+p1 {
+    text-align: center;
+}
+
+.services {
+    background-image: url('../assets/backgrounds/s_image.jpg');
+    background-size: 100% 100%;
+    padding: 5%;
+    color: white;
+    font-size: 25px;
+    margin-left: 20px
+}
+
+h2 {
+    text-align: center;
+}
+
+.us img {
+    display: inline-block;
+    margin: auto;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+#contact {
+    background-image: url('../assets/backgrounds/c_image.jpg');
+    padding: 20px 5px;
+    color: white;
+}
+
+.contact {
+    background-image: url('../assets/backgrounds/c_image.jpg');
+    background-size: 100% 100%;
+    /* padding: 15%; */
+    padding: 20px 5px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.social img {
+    padding: 0%;
+    text-align: center;
+    font-size: 20px;
+    width: 50px;
+    margin: 5px 2px;
+    display: inline-block;
+    margin-top: 70px;
+    justify-content: center;
+    align-content: unset;
+}
+
+.social {
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Delius Swash Caps', cursive;
+}
+
+h4 {
+    text-align: center;
+}
+
+/* overlay section */
+
+/ #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8 {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#overlay, #overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6, #overlay7 {
+    color: black;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    font-family: Arial, Verdana;
+    color: #000;
+    font-size: 150%;
+    font-weight: 900;
+    text-shadow: 1px 1px #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid honeydew;
+    background-color: ivory;
+}
+
+/* image
+#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8 {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    position: relative;
+    display:inline-block;
+    width: 25%;
+    margin-bottom: 0.5em;
+} */
+
+/* 
+.image {
+    display: table-row-group;
+    flex-wrap:wrap;
+    width: 25%;
+    margin-bottom: 0.5em;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 30%;
+    margin-top: 5%;
+} */
+
+/* Contact section */
+
+.message {
+    padding: 3px 15px;
+    margin: 7px 2px;
+    width: 700px;
+    max-width: 89%;
+    color: lime;
+    position: relative;
+}
+
+form {
+    width: 700px;
+    max-width: 90%;
+    display: inline-block;
+}
+
+::placeholder {
+    color: rgb(204, 204, 204);
+}
+
+form input {
+    width: 49%;
+}
+
+form input, form textarea {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: all 0.2s ease;
+    padding: 7px;
+}
+
+form textarea {
+    margin-top: 20px;
+    width: 98.8%;
+}
+
+form input:focus, textarea:focus {
+    background: rgba(0, 0, 0, 0.733);
+    border: transparent;
+    transform: scale(1.03);
+}
+
+form input[type=submit] {
+    background: rgba(95, 81, 177, 0.699);
+    font-weight: 200;
+    font-size: 1.0em;
+    padding: 0px;
+    outline: thick;
+}
+
+form input[type=submit]:hover {
+    border-radius: 30px;
+    background: rgb(119, 0, 255);
+    outline: none;
+}
+
+form input[type=reset] {
+    background: rgba(95, 81, 177, 0.699);
+    font-weight: 200;
+    font-size: 1.0em;
+    padding: 0px;
+    outline: thick;
+}
+
+form input[type=reset]:hover {
+    border-radius: 30px;
+    background: rgb(119, 0, 255);
+    outline: none;
+}
+
+/* @media queries */
+
+@media only screen and (max-width: 600px) {
+    header div {
+        padding-top: 30vw;
+    }
+    #whatWeDo div {
+        width: 100%;
+        min-height: 130px;
+    }
+    #portfolio>div {
+        width: 49%;
+    }
+    #portfolio>div>div>p {
+        font-size: 1.4em;
+    }
+    form input, form textarea {
+        width: 100%;
+        margin: 5px 0;
+    }
+    form input[type=submit] {
+        width: auto;
+        padding: 0 15%;
+    }
+}
+
+/* end @media queries */
+
+/* MailChimp Form Embed Code - Classic - 12/17/2015 v10.7 */
+
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+}
+
+#mc_embed_signup form {
+    display: block;
+    position: relative;
+    text-align: left;
+    padding: 10px 0 10px 3%
+}
+
+#mc_embed_signup h2 {
+    font-weight: bold;
+    padding: 0;
+    margin: 15px 0;
+    font-size: 1.4em;
+}
+
+#mc_embed_signup input {
+    border: 1px solid #ABB0B2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#mc_embed_signup input[type=checkbox] {
+    -webkit-appearance: checkbox;
+}
+
+#mc_embed_signup input[type=radio] {
+    -webkit-appearance: radio;
+}
+
+#mc_embed_signup input:focus {
+    border-color: #333;
+}
+
+#mc_embed_signup .button {
+    clear: both;
+    background-color: #aaa;
+    border: 0 none;
+    border-radius: 4px;
+    transition: all 0.23s ease-in-out 0s;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: normal;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 5px 10px 0;
+    padding: 0 22px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;
+}
+
+#mc_embed_signup .button:hover {
+    background-color: #777;
+}
+
+#mc_embed_signup .small-meta {
+    font-size: 11px;
+}
+
+#mc_embed_signup .nowrap {
+    white-space: nowrap;
+}
+
+#mc_embed_signup .mc-field-group {
+    clear: left;
+    position: relative;
+    width: 96%;
+    padding-bottom: 3%;
+    min-height: 50px;
+}
+
+#mc_embed_signup .size1of2 {
+    clear: none;
+    float: left;
+    display: inline-block;
+    width: 46%;
+    margin-right: 4%;
+}
+
+* html #mc_embed_signup .size1of2 {
+    margin-right: 2%;
+    /* Fix for IE6 double margins. */
+}
+
+#mc_embed_signup .mc-field-group label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+#mc_embed_signup .mc-field-group input {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-indent: 2%;
+}
+
+#mc_embed_signup .mc-field-group select {
+    display: inline-block;
+    width: 99%;
+    padding: 5px 0;
+    margin-bottom: 2px;
+}
+
+#mc_embed_signup .datefield, #mc_embed_signup .phonefield-us {
+    padding: 5px 0;
+}
+
+#mc_embed_signup .datefield input, #mc_embed_signup .phonefield-us input {
+    display: inline;
+    width: 60px;
+    margin: 0 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 5px 0 2px 0;
+}
+
+#mc_embed_signup .phonefield-us .phonearea input, #mc_embed_signup .phonefield-us .phonedetail1 input {
+    width: 40px;
+}
+
+#mc_embed_signup .datefield .monthfield input, #mc_embed_signup .datefield .dayfield input {
+    width: 30px;
+}
+
+#mc_embed_signup .datefield label, #mc_embed_signup .phonefield-us label {
+    display: none;
+}
+
+#mc_embed_signup .indicates-required {
+    text-align: right;
+    font-size: 11px;
+    margin-right: 4%;
+}
+
+#mc_embed_signup .asterisk {
+    color: #e85c41;
+    font-size: 150%;
+    font-weight: normal;
+    position: relative;
+    top: 5px;
+}
+
+#mc_embed_signup .clear {
+    clear: both;
+}
+
+#mc_embed_signup .mc-field-group.input-group ul {
+    margin: 0;
+    padding: 5px 0;
+    list-style: none;
+}
+
+#mc_embed_signup .mc-field-group.input-group ul li {
+    display: block;
+    padding: 3px 0;
+    margin: 0;
+}
+
+#mc_embed_signup .mc-field-group.input-group label {
+    display: inline;
+}
+
+#mc_embed_signup .mc-field-group.input-group input {
+    display: inline;
+    width: auto;
+    border: none;
+}
+
+#mc_embed_signup div#mce-responses {
+    float: left;
+    top: -1.4em;
+    padding: 0em .5em 0em .5em;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 5%;
+    clear: both;
+}
+
+#mc_embed_signup div.response {
+    margin: 1em 0;
+    padding: 1em .5em .5em 0;
+    font-weight: bold;
+    float: left;
+    top: -1.5em;
+    z-index: 1;
+    width: 80%;
+}
+
+#mc_embed_signup #mce-error-response {
+    display: none;
+}
+
+#mc_embed_signup #mce-success-response {
+    color: #529214;
+    display: none;
+}
+
+#mc_embed_signup label.error {
+    display: block;
+    float: none;
+    width: auto;
+    margin-left: 1.05em;
+    text-align: left;
+    padding: .5em 0;
+}
+
+#mc-embedded-subscribe {
+    clear: both;
+    width: auto;
+    display: block;
+    margin: 1em 0 1em 5%;
+}
+
+#mc_embed_signup #num-subscribers {
+    font-size: 1.1em;
+}
+
+#mc_embed_signup #num-subscribers span {
+    padding: .5em;
+    border: 1px solid #ccc;
+    margin-right: .5em;
+    font-weight: bold;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+    display: inline-block;
+    margin: 2px 0 1em 0;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.85);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: normal;
+    z-index: 1;
+    color: #e85c41;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+    border: 2px solid #e85c41;
+}
